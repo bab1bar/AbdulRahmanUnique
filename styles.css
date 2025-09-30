@@ -1,0 +1,144 @@
+
+
+
+
+
+:root {
+  --main-bg: #f0f0f0;
+  --main-color: #333;
+  --btn-radius: 8px;
+  --border-radius: 10%;
+--hover-scale: 1.1;
+--transform: translateY(-5px); /* move upward by 5px */
+  --box-shadow: 0 6px 12px rgba(0,0,0,0.9); /* optional shadow for depth */
+}
+
+
+
+
+
+
+#green {    
+    border-radius: var(--border-radius);
+    background-color: green;
+    color: rgb(90, 231, 9);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#red {    
+    border-radius: var(--border-radius);
+    background-color: red;
+    color: rgb(243, 239, 239);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#blue {    
+    border-radius: var(--border-radius);
+    background-color: blue;
+    color: rgb(243, 239, 239);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#yellow {    
+    background-color: yellow;
+    color: rgb(61, 5, 212);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: var(--border-radius);
+}
+
+#cyan {    
+    background-color: cyan;
+    color: rgb(90, 231, 9);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: var(--border-radius);
+
+}
+
+#purple {    
+    background-color: purple;
+    color: rgb(155, 146, 211);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: var(--border-radius);
+
+}
+
+#orange {   
+     
+    background-color: orange;
+    color: rgb(235, 238, 233);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: var(--border-radius);
+
+}
+body {
+    text-align: center;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    border-radius: var(--border-radius);
+}
+
+
+
+#green:hover {
+  background-color: lightgreen;
+  transform: scale(1.1);
+}
+
+#red:hover {
+  background-color: lightcoral;
+  transform: scale(1.1);
+}
+
+#blue:hover {
+  background-color: lightblue;
+  transform: scale(1.1);
+}
+
+#yellow:hover {
+  background-color: lightyellow;
+  transform: scale(1.1);
+}
+
+#cyan:hover {
+  background-color: lightcyan;
+  transform: scale(1.1);
+}
+
+
+#green, #red, #blue, #yellow {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#red, #blue, #yellow,  #green:hover {
+  transform: translateY(-5px); /* move upward by 5px */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.9); /* optional shadow for depth */
+}
