@@ -15,7 +15,16 @@
 
 
 
-
+#soundButton{
+    border-radius: var(--border-radius);
+    background-color: rgb(0, 0, 0);
+    color: rgb(125, 70, 146);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+} 
 
 
 #green {    

@@ -27,10 +27,11 @@ document.getElementById("orange").onclick = function() {
 }   
 
 
- orange.addEventListener("mouseenter", () => {
-      document.body.style.backgroundColor = "lightblue";
-    });
-
+orange.addEventListener("click", () => {
+  document.body.style.backgroundColor = "lightblue";
+  sound.currentTime = 0;
+  sound.play();
+});
  orange.addEventListener("mouseleave", () => {
       document.body.style.backgroundColor = "white";
  });
@@ -45,3 +46,14 @@ document.getElementById("orange").onclick = function() {
      index = (index + 1) % colors.length; // loop back after last color
     });
 
+// get button by ID
+const button = document.getElementById("soundButton");
+
+// create Audio object
+const sound = new Audio("sounds/sound1.wav"); // replace with your sound file path
+
+// play sound on click
+button.addEventListener("click", () => {
+  sound.currentTime = 0; // restart sound if clicked quickly again
+  sound.play();
+});
