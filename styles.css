@@ -61,6 +61,13 @@
     margin: 5px;
     border-radius: var(--border-radius);
 }
+.magic{ 
+  background-color: rgb(238, 18, 18);
+  color: rgb(243, 234, 234);
+  font-size: 18px;
+  border-radius: var(--border-radius);
+
+}
 
 #cyan {    
     background-color: cyan;

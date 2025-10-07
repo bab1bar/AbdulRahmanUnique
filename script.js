@@ -27,3 +27,21 @@ document.getElementById("orange").onclick = function() {
 }   
 
 
+ orange.addEventListener("mouseenter", () => {
+      document.body.style.backgroundColor = "lightblue";
+    });
+
+ orange.addEventListener("mouseleave", () => {
+      document.body.style.backgroundColor = "white";
+ });
+
+    const yellow = document.getElementById("yellow");
+    const colors = ["blue", "yellow", "green", "purple", "orange", "red", "cyan", "pink", "lightgreen", 
+         "lightblue", "lightyellow", "lavender", "magenta", "lime", "teal", "teal", "gold", "silver"];
+    let index = 0;
+
+    yellow.addEventListener("mouseenter", () => {
+      document.body.style.backgroundColor = colors[index];
+     index = (index + 1) % colors.length; // loop back after last color
+    });
+
