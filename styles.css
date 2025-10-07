@@ -14,6 +14,20 @@
 }
 
 
+#alert {
+   background-color: rgb(236, 90, 6);
+  color: rgba(8, 23, 230, 0.336);
+  font-size: 10px;
+}
+
+#alert:hover {
+  display: inline-block;          /* required for rotation */
+  transition: transform 0.3s ease; /* optional for smooth movement */
+  background-color: rgb(134, 3, 221);
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  transform: rotate(20deg);
+}
 
 #soundButton{
     border-radius: var(--border-radius);

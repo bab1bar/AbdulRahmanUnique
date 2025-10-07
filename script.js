@@ -28,7 +28,7 @@ document.getElementById("orange").onclick = function() {
 
 
 orange.addEventListener("click", () => {
-  document.body.style.backgroundColor = "lightblue";
+  document.body.style.backgroundColor = "orange";
   sound.currentTime = 0;
   sound.play();
 });
