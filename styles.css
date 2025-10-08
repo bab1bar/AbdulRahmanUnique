@@ -13,6 +13,37 @@
   --box-shadow: 0 6px 12px rgba(0,0,0,0.9); /* optional shadow for depth */
 }
 
+/* Desktop default */
+nav {
+   position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Mobile view (below 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  li a {
+    display: block;
+    font-size: 18px;
+  }
+}
+
+
 body {
     text-align: center;
     margin-top: 0px;
@@ -236,4 +267,5 @@ li a {
     rotate: -5deg;
      transition: all 0.9s ease-in-out infinite;
   }
+
 
