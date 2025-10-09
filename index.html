@@ -35,6 +35,24 @@
     <button id="sound1" onclick="Sound()"></button>
 
 
-    <script src="script.js"></script>
+    <script src="script.js">
+
+    // 🧠 Run the alert automatically when page loads
+    window.onload = function() {
+      Swal.fire({
+        title: "Welcome Back, Chef Abdul 🍳",
+        text: "The webpage is under development. It will be ready soon. 
+thanks. ?",
+        icon: "success",
+        confirmButtonText: "Let’s Go!",
+        background: "#111",
+        color: "#fff",
+        confirmButtonColor: "#ff9800",
+        showClass: { popup: "animate__animated animate__fadeInDown" },
+        hideClass: { popup: "animate__animated animate__fadeOutUp" }
+      });
+    };
+  </script>
+</script>
 </body>
 </html>
