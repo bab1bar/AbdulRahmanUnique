@@ -1,7 +1,16 @@
+window.onload = function showAlert() {
+  Swal.fire({
+    title: "Assalam-O-Alaikum!",
+    text: "Thanks for visiting my website 🌟 This page is under development. Some features may not work properly 😊",
+    icon: "success",
+    background: "linear-gradient(135deg, #366dc0, #c40d16, #bdf81a)", // ✅ gradient background
+    color: "#141111",         // ✅ text color
+    confirmButtonColor: "#00ADB5"  // ✅ button color
+  });
+}
 
-  function showAlert() {
-    alert("Note: This website/page is in under development. Some features may not work properly.");
-  }
+
+
 
 document.getElementById("green").onclick = function() {
     document.body.style.backgroundColor = "green";
