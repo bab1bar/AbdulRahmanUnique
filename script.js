@@ -1,3 +1,8 @@
+
+  function showAlert() {
+    alert("Note: This website/page is in under development. Some features may not work properly.");
+  }
+
 document.getElementById("green").onclick = function() {
     document.body.style.backgroundColor = "green";
 }
@@ -46,16 +51,15 @@ orange.addEventListener("click", () => {
      index = (index + 1) % colors.length; // loop back after last color
     });
 
-// get button by ID
-const button = document.getElementById("soundButton");
 
-// create Audio object
-const sound = new Audio("sounds/sound1.wav"); // replace with your sound file path
 
-// play sound on click
-button.addEventListener("click", () => {
-  sound.currentTime = 0; // restart sound if clicked quickly again
-  sound.play();
-});
+  // get the button and audio elements
+  const button = document.getElementById("heart");
+  const hoverSound = document.getElementById("heartBeatSound");
 
- 
+  // play sound on hover
+  button.addEventListener("mouseenter", () => {
+    hoverSound.currentTime = 0; // restart sound if hovered quickly again
+    hoverSound.play();
+  });
+

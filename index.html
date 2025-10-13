@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     
 </head>
-<body>
-    
+<body onload="showAlert()">
   <nav>
   <h1>MyLogo</h1>
   <ul>
@@ -19,40 +18,22 @@
   </ul>
 </nav>
 <div id="main">
-    <h1>Welcome to My Color Changer Website</h1>
-    <p>Click the buttons below to change the background color of this page.</p>
-</div>    <h3 class="color">Color Changer</h3>
-    <button id="green">Green</button>
-  <button id="red">Red</button>  
-  <button id="blue">Blue</button> 
+    <h1>Welcome to My Color Changer Website</h1><br> 
+    <p>Click the buttons below to change the background color of this page.</p> <br>
+</div>    <h3 class="color">Color Changer</h3><br>
+    <button id="green">Green</button><br>
+  <button id="red">Red</button>  <br>
+  <button id="blue">Blue</button> <br>
 
    <button id="yellow">yellow<br>
-   <span class="magic"> hover on me for mgic</span></button>
-    <button id="cyan">cyan</button>
-    <button id="purple">Purple</button>
-    <button id="orange"title="I have sound effect." >Orange<span  id="alert"><br>Alert</span></button>
+   <span class="magic"> hover on me for mgic</span></button><br>
+    <button id="cyan">cyan</button><br>
+    <button id="purple">Purple</button><br>
+    <button id="orange"title="I have sound effect." >Orange<span  id="alert"><br>Alert</span></button><br><br> <br>
+<audio id="heartBeatSound" src="heartbeat.mp3"></audio>
+    <button id="heart" onmouseenter="Sound()">heartbeat <br>on hover</button><br>
 
-    <button id="sound1" onclick="Sound()"></button>
 
-
-    <script src="script.js">
-
-    // 🧠 Run the alert automatically when page loads
-    window.onload = function() {
-      Swal.fire({
-        title: "Welcome Back, Chef Abdul 🍳",
-        text: "The webpage is under development. It will be ready soon. 
-thanks. ?",
-        icon: "success",
-        confirmButtonText: "Let’s Go!",
-        background: "#111",
-        color: "#fff",
-        confirmButtonColor: "#ff9800",
-        showClass: { popup: "animate__animated animate__fadeInDown" },
-        hideClass: { popup: "animate__animated animate__fadeOutUp" }
-      });
-    };
-  </script>
-</script>
+    <script src="script.js"></script>
 </body>
 </html>

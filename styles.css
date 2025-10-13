@@ -244,11 +244,11 @@ ul li a:hover {
 
 #red, #blue, #yellow,  #green:hover {
   transform: translateY(-5px); /* move upward by 5px */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.9); /* optional shadow for depth */
+  box-shadow: 0 6px 12px rgba(211, 48, 48, 0.9); /* optional shadow for depth */
 }
 
 li a {
-    color: white;
+    color: rgb(240, 153, 153);
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -269,3 +269,43 @@ li a {
   }
 
 
+#heart {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: red;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: transform 0.5s ease;
+}
+
+/* Top parts of heart */
+#heart::before,
+#heart::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: red;
+  border-radius: 50%;
+  top: -40px;
+  left: 0;
+}
+
+#heart::after {
+  left: 40px;
+  top: 0;
+}
+
+/* Heartbeat animation */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1) rotate(-45deg); }
+  50% { transform: scale(1.2) rotate(-45deg); }
+}
+
+
+#heart:hover {
+  animation: heartbeat 0.6s infinite;
+}
