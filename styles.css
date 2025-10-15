@@ -24,10 +24,25 @@ nav {
 }
 
 /* Mobile view (below 768px) */
-@media (max-width: 768px) {
-  nav {
+/* Hide nav links and show hamburger on small screens */
+@media screen and (max-width: 768px) {
+  .nav-links {       /* replace with your nav ul class/id */
+    display: none;   /* hide by default */
     flex-direction: column;
-    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links.show {  /* when toggled */
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;  /* show hamburger icon */
+    cursor: pointer;
+    font-size: 28px;
+  }
+}
+
   }
 
   ul {

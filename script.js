@@ -72,3 +72,9 @@ orange.addEventListener("click", () => {
     hoverSound.play();
   });
 
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links'); // your nav ul class
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
